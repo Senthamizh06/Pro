@@ -1,0 +1,333 @@
+[
+  {
+    "question": "What is a Binary Search Tree (BST)?",
+    "answer": "A Binary Search Tree (BST) is a specialized type of binary tree where each node contains a key, and it satisfies the property that the key in each node is greater than all keys in the left subtree and less than all keys in the right subtree. BST allows for efficient searching, insertion, and deletion operations. The average time complexity for search, insert, and delete operations is O(log n) if the tree is balanced. In the worst case, when the tree becomes skewed, the time complexity can degrade to O(n). BSTs are used in various applications such as databases, memory management, and file systems. Self-balancing BSTs like AVL trees and Red-Black trees help maintain the balance. Proper balancing ensures the performance remains optimal."
+  },
+  {
+    "question": "What is Dynamic Programming (DP) dp?",
+    "answer": "Dynamic Programming (DP) is an optimization technique used to solve problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant computations. DP is mainly used when a problem has overlapping subproblems and optimal substructure properties. Examples include Fibonacci sequence, shortest path problems, and knapsack problems. DP can be implemented using either memoization (top-down) or tabulation (bottom-up). Memoization involves recursion and caching, while tabulation involves filling up a table iteratively. DP helps improve the time complexity significantly compared to naive recursive approaches. It is widely used in areas like artificial intelligence, operations research, and bioinformatics."
+  },
+  {
+    "question": "What is a Hash Table?",
+    "answer": "A Hash Table is a data structure that implements an associative array, a structure that can map keys to values. Hash tables use a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Ideally, the hash function distributes the keys uniformly across the array. Collisions, when two keys hash to the same index, are handled using methods like chaining or open addressing. Hash tables offer average-case time complexities of O(1) for search, insert, and delete operations. They are widely used in databases, caches, and sets/maps implementations. Good hash function design is crucial to maintain performance."
+  },
+  {
+    "question": "What is Depth First Search (DFS)?",
+    "answer": "Depth First Search (DFS) is a graph traversal algorithm that explores as far as possible along each branch before backtracking. It uses a stack data structure, either explicitly or through recursion. DFS starts at a selected node and explores each branch completely before moving to the next. It is commonly used to solve puzzles, topological sorting, and finding connected components. DFS can be implemented for both directed and undirected graphs. The time complexity of DFS is O(V + E), where V is the number of vertices and E is the number of edges. It can detect cycles in a graph and can also be adapted to perform pathfinding tasks. Care must be taken to handle infinite loops by marking visited nodes."
+  },
+  {
+    "question": "What is a Heap in Data Structures?",
+    "answer": "A Heap is a special complete binary tree-based data structure that satisfies the heap property. In a Max-Heap, for any given node, the value of the node is greater than or equal to its children. In a Min-Heap, the value of the node is less than or equal to its children. Heaps are commonly used to implement priority queues. Insertion and deletion operations in a heap have a time complexity of O(log n). The heap data structure is also used in Heap Sort, an efficient comparison-based sorting algorithm. Heaps are typically implemented using arrays where the parent and child relationships can be easily calculated using indices. They are used in algorithms like Dijkstra's shortest path and Huffman coding."
+  },
+  {
+    "question": "What is a Linked List and how does it work?",
+    "answer": "A Linked List is a linear data structure where each element is a separate object called a node. Each node contains data and a reference (or a link) to the next node in the sequence. Unlike arrays, linked lists do not have contiguous memory locations, making insertions and deletions more efficient in certain scenarios. Types of linked lists include singly linked lists, doubly linked lists, and circular linked lists. Singly linked lists only have a reference to the next node, while doubly linked lists have references to both the previous and next nodes. Linked lists are dynamic in nature and can grow or shrink during runtime. They are used in many applications like dynamic memory allocation, queues, stacks, and adjacency lists for graphs."
+  },
+  {
+    "question": "What is Big-O Notation and why is it important?",
+    "answer": "Big-O notation is a mathematical representation used to describe the upper bound of an algorithm's running time or space requirements in terms of the input size. It provides a high-level understanding of the algorithm's performance characteristics. Big-O focuses on the worst-case scenario, helping developers analyze the scalability of algorithms. Common Big-O complexities include O(1), O(log n), O(n), O(n log n), and O(n^2). Understanding Big-O helps in choosing the right algorithm based on efficiency requirements. It is crucial during system design, coding interviews, and real-world software development. Without Big-O analysis, it would be hard to predict how algorithms perform under large inputs. Therefore, it plays a vital role in optimizing solutions."
+  },
+  {
+    "question": "What is the difference between Stack and Queue?",
+    "answer": "A Stack is a linear data structure that follows the Last In, First Out (LIFO) principle. This means the element inserted last is the first to be removed. Common operations on a stack include push, pop, and peek. A Queue, on the other hand, follows the First In, First Out (FIFO) principle, where the first inserted element is the first to be removed. Operations for a queue include enqueue and dequeue. Stacks are used in function call management, expression evaluation, and backtracking algorithms. Queues are used in scheduling processes, handling asynchronous data, and implementing BFS traversal in graphs. Both data structures have different use cases depending on the access pattern needed."
+  },
+  
+    {
+      "question": "What is a Graph in data structures?",
+      "answer": "A Graph is a non-linear data structure consisting of nodes (vertices) and edges connecting these nodes. Graphs can be directed or undirected, weighted or unweighted. They are used to model relationships and networks like social connections, road maps, and internet links. Common operations include traversal, searching, and finding shortest paths. Representations include adjacency lists and adjacency matrices."
+    },
+    {
+      "question": "What is Breadth First Search (BFS)?",
+      "answer": "Breadth First Search (BFS) is a graph traversal algorithm that explores all the neighbor nodes at the present depth before moving on to nodes at the next depth level. It uses a queue data structure. BFS is useful in finding the shortest path in unweighted graphs and is used in peer-to-peer networks, GPS navigation, and web crawlers."
+    },
+    {
+      "question": "Explain Time Complexity and Space Complexity.",
+      "answer": "Time complexity measures the amount of time an algorithm takes to run as a function of the input size, while space complexity measures the amount of memory space it requires. Both are used to evaluate the efficiency of algorithms and ensure they perform well under large datasets."
+    },
+    {
+      "question": "What is a Priority Queue?",
+      "answer": "A Priority Queue is a special type of queue where each element is associated with a priority and elements are dequeued in order of their priority rather than just their insertion order. It is often implemented using heaps and is used in applications like Dijkstra's algorithm, job scheduling, and bandwidth management."
+    },
+    {
+      "question": "What is a Red-Black Tree?",
+      "answer": "A Red-Black Tree is a self-balancing Binary Search Tree where each node has an extra bit for denoting the color of the node (red or black). It ensures that the tree remains balanced, and guarantees that operations like insertion, deletion, and lookup take O(log n) time in the worst case."
+    },
+    {
+      "question": "What is Memoization?",
+      "answer": "Memoization is a technique where the results of expensive function calls are cached so that subsequent calls with the same parameters can be returned quickly. It is commonly used in dynamic programming to optimize recursive solutions and reduce redundant computations."
+    },
+    {
+      "question": "What is Tabulation in Dynamic Programming?",
+      "answer": "Tabulation is a bottom-up approach in dynamic programming where a table is filled iteratively based on previously computed values. Unlike memoization, it does not use recursion and solves all subproblems in a systematic order to ensure optimal solutions."
+    },
+    {
+      "question": "What is Divide and Conquer?",
+      "answer": "Divide and Conquer is an algorithm design paradigm that breaks a problem into smaller subproblems, solves them independently, and then combines their solutions. Examples include Merge Sort, Quick Sort, and Binary Search."
+    },
+    {
+      "question": "What is a Trie?",
+      "answer": "A Trie, or prefix tree, is a tree data structure used to store associative data structures, usually strings. It provides efficient retrieval, and is commonly used in applications like autocomplete, dictionary search, and IP routing."
+    },
+    {
+      "question": "What is Hashing?",
+      "answer": "Hashing is the process of converting input data of arbitrary size into a fixed-size value, typically for efficient data retrieval. It is used in hash tables, digital signatures, and data indexing. A good hash function minimizes collisions and distributes keys uniformly."
+    },
+    {
+      "question": "What is a Circular Queue?",
+      "answer": "A Circular Queue is a linear data structure that follows the FIFO principle but connects the end of the queue back to the front, forming a circle. It is used to efficiently utilize memory in scenarios like traffic systems and resource scheduling."
+    },
+    {
+      "question": "What is Backtracking?",
+      "answer": "Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally and removing solutions that fail to satisfy problem constraints. It is used in problems like maze solving, N-Queens, and Sudoku."
+    },
+    {
+      "question": "What is a Greedy Algorithm?",
+      "answer": "A Greedy Algorithm builds up a solution piece by piece, always choosing the next piece that offers the most immediate benefit. It does not always produce the optimal solution but works well for problems like Prim's algorithm, Kruskal's algorithm, and Huffman coding."
+    },
+    {
+      "question": "What is Recursion?",
+      "answer": "Recursion is a programming technique where a function calls itself in order to solve smaller instances of a problem. It is used in problems like tree traversals, factorial calculation, and the Tower of Hanoi. Base cases are essential to stop recursion."
+    },
+    {
+      "question": "What is Amortized Analysis?",
+      "answer": "Amortized analysis is used to determine the average time per operation over a sequence of operations, even though a single operation might be expensive. It is useful in analyzing operations in dynamic arrays, splay trees, and other data structures."
+    },
+    {
+      "question": "What is a Minimum Spanning Tree (MST)?",
+      "answer": "A Minimum Spanning Tree of a graph is a subset of the edges that connects all the vertices together without any cycles and with the minimum possible total edge weight. Algorithms like Prim's and Kruskal's are used to find MSTs."
+    },
+    {
+      "question": "Explain Quick Sort.",
+      "answer": "Quick Sort is a divide-and-conquer sorting algorithm that selects a pivot element, partitions the array around the pivot, and recursively sorts the subarrays. It has an average-case time complexity of O(n log n), but can degrade to O(n^2) if poorly chosen pivots are used."
+    },
+    {
+      "question": "What is Merge Sort?",
+      "answer": "Merge Sort is a stable, divide-and-conquer sorting algorithm that divides the input array into halves, recursively sorts them, and then merges the sorted halves. It consistently offers O(n log n) time complexity, even in the worst case."
+    },
+    {
+      "question": "What is a Binary Heap?",
+      "answer": "A Binary Heap is a complete binary tree where each node follows the heap property. It is used to implement efficient priority queues. Binary heaps are of two types: Min-Heap (parent smaller than children) and Max-Heap (parent larger than children)."
+    },
+    {
+      "question": "What is a Self-Balancing Binary Search Tree?",
+      "answer": "A Self-Balancing Binary Search Tree automatically ensures that the height of the tree remains logarithmic relative to the number of elements. AVL Trees and Red-Black Trees are examples. They guarantee efficient operations like insert, delete, and search."
+    },
+    {
+      "question": "What is an Adjacency List?",
+      "answer": "An Adjacency List is a way of representing a graph where each vertex stores a list of adjacent vertices. It is memory efficient for sparse graphs and makes it easy to iterate over neighbors of a vertex."
+    },
+    {
+      "question": "What is an Adjacency Matrix?",
+      "answer": "An Adjacency Matrix is a 2D array representation of a graph where each cell (i, j) indicates whether there is an edge between vertex i and vertex j. It is useful for dense graphs but consumes more memory for sparse graphs."
+    },
+    {
+      "question": "What is the difference between BFS and DFS?",
+      "answer": "BFS explores all neighbors level by level using a queue, while DFS explores depth-wise using a stack or recursion. BFS is better for finding the shortest path in unweighted graphs, while DFS is better for tasks like topological sorting and cycle detection."
+    },
+    {
+      "question": "What is Topological Sorting?",
+      "answer": "Topological Sorting of a directed acyclic graph (DAG) is a linear ordering of vertices such that for every directed edge u → v, vertex u comes before v. It is used in scheduling tasks, compilation order, and course prerequisite planning."
+    },
+    {
+      "question": "What is a DAG (Directed Acyclic Graph)?",
+      "answer": "A Directed Acyclic Graph (DAG) is a graph with directed edges and no cycles. It is widely used in representing workflows, scheduling jobs, and version control histories where dependencies must be maintained without loops."
+    },
+    {
+      "question": "What is Floyd Warshall Algorithm?",
+      "answer": "Floyd Warshall Algorithm is a dynamic programming algorithm used to find the shortest paths between all pairs of vertices in a weighted graph. It handles negative weights but not negative cycles. The time complexity is O(V^3)."
+    },
+    {
+      "question": "What is Dijkstra's Algorithm?",
+      "answer": "Dijkstra's Algorithm finds the shortest path from a source vertex to all other vertices in a graph with non-negative edge weights. It uses a priority queue (min-heap) and has a time complexity of O(V + E log V) with a Fibonacci heap."
+    },
+    {
+      "question": "What is a Singleton Design Pattern?",
+      "answer": "Singleton Design Pattern ensures that a class has only one instance and provides a global point of access to it. It is useful for classes like Database connections, configuration managers, and logging services."
+    },
+    {
+      "question": "What is ACID property in databases?",
+      "answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability — a set of properties that guarantee reliable transaction processing in databases. They ensure data integrity even in case of system failures, concurrent access, or crashes."
+    },
+    {
+      "question": "What is Normalization in Databases?",
+      "answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves decomposing tables into smaller ones and defining relationships. Forms like 1NF, 2NF, and 3NF define different levels of normalization."
+    },
+    {
+      "question": "What is an AVL Tree?",
+      "answer": "An AVL Tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes. After each operation, rotations are performed to maintain this balance factor. AVL trees provide O(log n) time complexity for insertions, deletions, and lookups. They're named after their inventors, Adelson-Velsky and Landis."
+    },
+    {
+      "question": "What is a B-Tree?",
+      "answer": "A B-Tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. Unlike binary trees, a B-Tree node can have more than two children. B-Trees are commonly used in databases and file systems because they minimize disk I/O operations and are well-suited for storage systems that read and write large blocks of data."
+    },
+    {
+      "question": "What is a B+ Tree?",
+      "answer": "A B+ Tree is a variant of B-Tree optimized for storage systems. All keys are stored at the leaf level, and leaves are linked in a linked list for efficient range queries. Internal nodes only contain keys for routing and don't hold actual data. B+ Trees are extensively used in database indexing and file systems due to their efficient disk access patterns and range query performance."
+    },
+    {
+      "question": "What is Bellman-Ford Algorithm?",
+      "answer": "The Bellman-Ford Algorithm finds the shortest paths from a source vertex to all other vertices in a weighted graph. Unlike Dijkstra's algorithm, it can handle graphs with negative weight edges. It works by relaxing all edges V-1 times (where V is the number of vertices) and can also detect negative weight cycles. The time complexity is O(V×E)."
+    },
+    {
+      "question": "What is a Segment Tree?",
+      "answer": "A Segment Tree is a binary tree data structure used for storing information about intervals or segments. It allows for efficient range queries and updates. Applications include finding minimum, maximum, sum, or other information over array subsegments in logarithmic time. It's particularly useful in computational geometry and range-based problems."
+    },
+    {
+      "question": "What is a Fenwick Tree (Binary Indexed Tree)?",
+      "answer": "A Fenwick Tree, or Binary Indexed Tree (BIT), is a data structure that provides efficient methods for calculating and updating cumulative frequencies. It uses a clever binary representation to perform operations in O(log n) time. BITs are used in applications requiring frequent prefix sum calculations and point updates, like range sum queries and counting inversions."
+    },
+    {
+      "question": "What is Radix Sort?",
+      "answer": "Radix Sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by individual digits which share the same significant position and value. It processes digits from least significant to most significant (LSD) or vice versa (MSD). Radix Sort has a time complexity of O(d×(n+k)), where d is the number of digits, n is the number of elements, and k is the range of possible digit values."
+    },
+    {
+      "question": "What is Counting Sort?",
+      "answer": "Counting Sort is a stable, non-comparative sorting algorithm that works by determining the number of occurrences of each distinct element in the array. It then uses this count to determine each element's position in the output array. Counting Sort has a time complexity of O(n+k), where n is the number of elements and k is the range of the input. It's efficient when k is not significantly larger than n."
+    },
+    {
+      "question": "What is Bucket Sort?",
+      "answer": "Bucket Sort is a sorting algorithm that divides the input into several 'buckets,' sorts each bucket individually (typically with another sorting algorithm), and then concatenates the sorted buckets. With evenly distributed input, it has an average time complexity of O(n+k), where n is the number of elements and k is the number of buckets. It works well when the input is uniformly distributed."
+    },
+    {
+      "question": "What is a Suffix Tree?",
+      "answer": "A Suffix Tree is a compressed trie containing all the suffixes of a given string. It enables efficient string operations such as pattern matching, finding the longest repeated substring, and finding the longest common substring between two strings. Construction time is O(n) using Ukkonen's algorithm, and lookup time is O(m), where n is the string length and m is the pattern length."
+    },
+    {
+      "question": "What is a Suffix Array?",
+      "answer": "A Suffix Array is a space-efficient data structure that stores the lexicographically sorted array of all suffixes of a string. It requires less space than a suffix tree and can efficiently solve many string processing problems. Construction time is O(n log n) with simple algorithms, though linear-time algorithms exist. Suffix arrays are used in data compression, bioinformatics, and text indexing."
+    },
+    {
+      "question": "What is KMP (Knuth-Morris-Pratt) Algorithm?",
+      "answer": "The Knuth-Morris-Pratt (KMP) Algorithm is a string-searching algorithm that uses information about previously matched characters to minimize comparisons. It preprocesses the pattern to create a partial match table (or failure function) that helps skip characters that are known to match. KMP has a time complexity of O(n+m), where n is the text length and m is the pattern length, making it more efficient than naive string matching."
+    },
+    {
+      "question": "What is the A* Search Algorithm?",
+      "answer": "A* (A-star) Search Algorithm is an informed search algorithm used for pathfinding and graph traversal. It combines the advantages of both Dijkstra's algorithm (guaranteeing the shortest path) and Greedy Best-First-Search (using heuristics to guide search). A* evaluates nodes by combining the cost to reach the node and a heuristic estimate of the cost to reach the goal. It's widely used in artificial intelligence, robotics, and video games."
+    },
+    {
+      "question": "What is Union-Find (Disjoint Set) Data Structure?",
+      "answer": "Union-Find, or Disjoint Set, is a data structure that tracks elements partitioned into disjoint (non-overlapping) subsets. It provides near-constant-time operations for adding sets, merging sets, and finding the representative of a set (determining which set an element belongs to). With path compression and union by rank optimizations, operations take nearly constant amortized time. It's used in Kruskal's algorithm for MST and detecting cycles in graphs."
+    },
+    {
+      "question": "What is Sliding Window Technique?",
+      "answer": "The Sliding Window Technique is an algorithmic approach that converts nested loops into a single loop, reducing time complexity. It maintains a subset of items as a window, and slides the window from one end to another to capture various features. This technique is particularly useful for array/string problems involving subarrays/substrings, such as finding the longest substring without repeating characters or maximum sum subarray of fixed size."
+    },
+    {
+      "question": "What is Two Pointer Technique?",
+      "answer": "The Two Pointer Technique uses two pointers to iterate through a data structure simultaneously to solve problems efficiently. Common patterns include using pointers at the beginning and end moving inward (often for sorted arrays), fast and slow pointers (for linked lists), and pointers moving in the same direction at different speeds. Applications include finding pairs with a target sum, removing duplicates, and detecting cycles in linked lists."
+    },
+    {
+      "question": "What is Kadane's Algorithm?",
+      "answer": "Kadane's Algorithm is a dynamic programming approach for finding the maximum sum subarray in a one-dimensional array. It has a time complexity of O(n) and works by keeping track of the maximum sum ending at each position. This algorithm efficiently handles cases where the array contains both positive and negative numbers. It's widely used in stock market analysis, signal processing, and other applications requiring contiguous subarray analysis."
+    },
+    {
+      "question": "What is the Sieve of Eratosthenes?",
+      "answer": "The Sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to a specified limit. It works by iteratively marking the multiples of each prime, starting from 2. The numbers that remain unmarked at the end are prime. The algorithm has a time complexity of O(n log log n) and is one of the most efficient ways to find all primes smaller than a given number."
+    },
+    {
+      "question": "What is LRU Cache?",
+      "answer": "LRU (Least Recently Used) Cache is a data structure that discards the least recently used items first when it reaches its capacity limit. It maintains both fast access time (using a hash map) and tracking of access order (using a doubly linked list). LRU Cache operations like get and put have O(1) time complexity. It's widely used in operating systems, database management systems, and web browsers for efficient memory/cache management."
+    },
+    {
+      "question": "What is a Skip List?",
+      "answer": "A Skip List is a probabilistic data structure that allows O(log n) search complexity as well as O(log n) insertion complexity within an ordered sequence of elements. It consists of multiple layers where the bottom layer is an ordinary linked list, and each higher layer acts as an 'express lane' for the lists below. Skip Lists provide a simpler and more memory-efficient alternative to balanced trees in many scenarios."
+    },
+    {
+      "question": "What is the Manacher's Algorithm?",
+      "answer": "Manacher's Algorithm is an efficient algorithm for finding the longest palindromic substring in a string. It cleverly reuses previously computed results to achieve a linear time complexity of O(n). The algorithm transforms the original string by inserting special characters between each pair of consecutive characters to handle both odd and even-length palindromes uniformly. It's much faster than the naive O(n²) approach."
+    },
+    {
+      "question": "What is the Rabin-Karp Algorithm?",
+      "answer": "The Rabin-Karp Algorithm is a string-matching algorithm that uses hashing to find patterns in text. It computes a hash value for the pattern and for each possible substring of the text with the same length as the pattern, then compares those hash values. If they match, it performs a character-by-character verification. With a good hash function, it has an average-case time complexity of O(n+m), where n is the text length and m is the pattern length."
+    },
+    {
+      "question": "What is the Aho-Corasick Algorithm?",
+      "answer": "The Aho-Corasick Algorithm is a string-searching algorithm that locates occurrences of a dictionary of words within an input text. It constructs a finite state machine from the dictionary words, then processes the text in a single pass. The algorithm has a time complexity of O(n+m+z), where n is the length of the text, m is the total length of all patterns, and z is the number of pattern occurrences. It's used in virus scanning, intrusion detection, and plagiarism detection."
+    },
+    {
+      "question": "What is the Fischer-Yates Shuffle Algorithm?",
+      "answer": "The Fischer-Yates (or Knuth) Shuffle Algorithm is used to generate a random permutation of a finite sequence. It works by iterating through the array from end to beginning, swapping each element with a randomly selected element from the unprocessed portion of the array. The algorithm produces an unbiased permutation (all permutations are equally likely) in O(n) time. It's commonly used in applications requiring random shuffling, such as card games and playlist randomization."
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "answer": "The time complexity of binary search is O(log n)."
+    },
+    {
+      "question": "What is the time complexity of linear search?",
+      "answer": "The time complexity of linear search is O(n)."
+    },
+    {
+      "question": "What is the time complexity of bubble sort?",
+      "answer": "The average and worst-case time complexity of bubble sort is O(n^2)."
+    },
+    {
+      "question": "Which sorting algorithm has the best average time complexity?",
+      "answer": "Merge Sort and Quick Sort both have an average time complexity of O(n log n)."
+    },
+    {
+      "question": "What is the time complexity of accessing an element in an array?",
+      "answer": "Accessing an element in an array has a time complexity of O(1)."
+    },
+    {
+      "question": "What is the time complexity of inserting an element in a linked list?",
+      "answer": "Insertion at the head or tail of a linked list is O(1), but insertion at an arbitrary position is O(n)."
+    },
+    {
+      "question": "How does the time complexity of recursion work?",
+      "answer": "Recursive algorithms are analyzed using recurrence relations, and the time complexity depends on how many times the function calls itself and the work done per call."
+    },
+    {
+      "question": "What is the difference between O(n) and O(n^2)?",
+      "answer": "O(n) represents linear time where performance scales directly with input size. O(n^2) represents quadratic time where performance scales with the square of the input size, making it slower for large inputs."
+    },
+    {
+      "question": "What is the best time complexity of Linear Search?",
+      "answer": "The best time complexity of Linear Search is O(1)."
+    },
+    {
+      "question": "What is the worst time complexity of Binary Search?",
+      "answer": "The worst time complexity of Binary Search is O(log n)."
+    },
+    {
+      "question": "What is the average time complexity of Bubble Sort?",
+      "answer": "The average time complexity of Bubble Sort is O(n^2)."
+    },
+    {
+      "question": "What is the worst space complexity of Selection Sort?",
+      "answer": "The worst space complexity of Selection Sort is O(1)."
+    },
+    {
+      "question": "What is the best time complexity of Insertion Sort?",
+      "answer": "The best time complexity of Insertion Sort is O(n)."
+    },
+    {
+      "question": "What is the worst time complexity of Merge Sort?",
+      "answer": "The worst time complexity of Merge Sort is O(n log n)."
+    },
+    {
+      "question": "What is the worst space complexity of Quick Sort?",
+      "answer": "The worst space complexity of Quick Sort is O(log n)."
+    },
+    {
+      "question": "What is the average time complexity of Heap Sort?",
+      "answer": "The average time complexity of Heap Sort is O(n log n)."
+    },
+    {
+      "question": "What is the best time complexity of Bucket Sort?",
+      "answer": "The best time complexity of Bucket Sort is O(n + k)."
+    },
+    {
+      "question": "What is the worst time complexity of Radix Sort?",
+      "answer": "The worst time complexity of Radix Sort is O(nk)."
+    },
+    {
+      "question": "What is the average time complexity of Tim Sort?",
+      "answer": "The average time complexity of Tim Sort is O(n log n)."
+    },
+    {
+      "question": "What is the worst time complexity of Shell Sort?",
+      "answer": "The worst time complexity of Shell Sort is O((n log n)^2)."
+    }
+  
+  
+]
